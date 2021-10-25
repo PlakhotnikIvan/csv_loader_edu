@@ -1,0 +1,5 @@
+CSV_URL: 'https://support.spatialkey.com/wp-content/uploads/2021/02/SacramentocrimeJanuary2006.csv'
+save_folder: 'save'
+use_cache: 'yes'
+cache_folder: 'cache'
+output_format: 'json'
