@@ -28,6 +28,7 @@ def url_loader(CSV_URL, use_cache, cache_folder):
             download = s.get(CSV_URL)
             decoded_content = download.content.decode('utf-8')
             final_list = list(csv.reader(decoded_content.splitlines()))
+            logger.info('adding url to cache')
             with open(dict_path, 'w') as d:
                 cache[CSV_URL] = final_list 
                 json.dump(cache, d)
